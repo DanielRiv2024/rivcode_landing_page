@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { TbWorld,TbBrandReactNative } from "react-icons/tb";
+import { TbWorld, TbBrandReactNative } from "react-icons/tb";
 
-import { FaReact, FaNodeJs, FaJava,FaHtml5 ,FaCss3} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaJava, FaHtml5, FaCss3 } from "react-icons/fa";
 import { FaSquareJs } from "react-icons/fa6";
 import { SiTailwindcss, SiMicrosoftazure } from "react-icons/si";
 import { VscAzureDevops } from "react-icons/vsc";
@@ -21,86 +21,58 @@ export default function Home() {
             className="mr-4"
           />
           <div className="flex flex-row items-center gap-2">
-            <TbWorld color="black" size={20} />
-            <h1 className="text-xl font-bold text-black text-base pt-[1px]">
+            <TbWorld color="#1E3A8A" size={20} />
+            <h1 className="text-xl font-bold text-blue-900 text-base pt-[1px]">
               Español
             </h1>
           </div>
         </div>
       </header>
 
-      <main className="mt-20 p-4 gap-10 flex flex-col">
-        <div className="flex flex-col items-center">
-          <p className="text-4xl text-black font-extrabold font-serif">
-            ¿Quienes somos?
+      <main className="mt-20 p-4 h-screen gap-10 flex flex-col">
+        <div className="flex flex-col bg-white items-center">
+          <p className="text-3xl text-blue-900 font-serif font-bold">
+            Nuestras Areas de especializacion
           </p>
-          <div className="flex flex-row max-w-2xl break-words mt-10">
-            <Image
-              src="/images/about_us.webp"
-              alt="Rivcode Logo"
-              width={300}
-              height={110}
-              className="mr-4"
-            />
-            <p
-              className="text-sm text-black
-           font-serif font-semibold"
-            >
-              Somos una organización con sede en Costa Rica, dedicada al
-              desarrollo e innovación tecnológica en los campos de software y
-              hardware. Nos especializamos en crear soluciones avanzadas y
-              eficientes, impulsando el crecimiento de empresas y proyectos
-              mediante tecnologías de vanguardia que optimizan procesos y
-              mejoran la calidad de los servicios.
-            </p>
-          </div>
-        </div>
 
-        <div className="flex flex-col h-screen bg-white items-center">
-          <p className="text-2xl text-black font-extrabold font-serif">
-            Desarrollo Frontend
-          </p>
-          <div className="flex flex-row max-w-2xl break-words mt-10">
-            <Image
-              src="/images/software.png"
-              alt="Rivcode Logo"
-              width={300}
-              height={110}
-              className="mr-4"
-            />
-            <div>
-              <p
-                className="text-sm text-black
-           font-serif font-semibold"
-              >
-               
-              </p>
-              <div className="flex space-x-4">
-              <div className="bg-black rounded-full p-2">
-                  <TbBrandReactNative className="text-white text-3xl" />
-                </div>
-                <div className="bg-black rounded-full p-2">
-                  <FaReact className="text-white text-3xl" />
-                </div>
-                <div className="bg-black rounded-full p-2">
-                  <FaNodeJs className="text-white text-3xl" />
-                </div>
-                <div className="bg-black rounded-full p-2">
-                  <FaSquareJs className="text-white text-3xl" />
-                </div>
-                <div className="bg-black rounded-full p-2">
-                  <SiTailwindcss className="text-white text-3xl" />
-                </div>
-                <div className="bg-black rounded-full p-2">
-                  <RiNextjsFill className="text-white text-3xl" />
-                </div>
-                <div className="bg-black rounded-full p-2">
-                  <FaHtml5 className="text-white text-3xl" />
-                </div>
-                <div className="bg-black rounded-full p-2">
-                  <FaCss3 className="text-white text-3xl" />
-                </div>
-                
+          <div className="bg-slate-100 rounded-lg p-4">
+            <p className="text-2xl text-gray-700 font-extrabold font-serif">
+              Desarrollo Frontend
+            </p>
+
+            <p
+              className="text-xs text-black
+          font-extrabold text-black"
+            >
+              Utilizamos las últimas tecnologías para crear interfaces de
+              usuario dinámicas y responsivas. Nuestro enfoque se centra en la
+              experiencia del usuario y el rendimiento, asegurando que cada
+              proyecto sea visualmente atractivo y funcional.
+            </p>
+            <div className="flex space-x-4">
+              <div className="bg-blue-900 rounded-full p-2">
+                <TbBrandReactNative className="text-white text-3xl" />
+              </div>
+              <div className="bg-blue-900 rounded-full p-2">
+                <FaReact className="text-white text-3xl" />
+              </div>
+              <div className="bg-blue-900 rounded-full p-2">
+                <FaNodeJs className="text-white text-3xl" />
+              </div>
+              <div className="bg-blue-900 rounded-full p-2">
+                <FaSquareJs className="text-white text-3xl" />
+              </div>
+              <div className="bg-blue-900 rounded-full p-2">
+                <SiTailwindcss className="text-white text-3xl" />
+              </div>
+              <div className="bg-blue-900 rounded-full p-2">
+                <RiNextjsFill className="text-white text-3xl" />
+              </div>
+              <div className="bg-blue-900 rounded-full p-2">
+                <FaHtml5 className="text-white text-3xl" />
+              </div>
+              <div className="bg-blue-900 rounded-full p-2">
+                <FaCss3 className="text-white text-3xl" />
               </div>
             </div>
           </div>
